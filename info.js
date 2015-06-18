@@ -10,7 +10,16 @@ var info = {
 		"location" : "San Diego, CA"
 	}
 
-
+	"experience" : [
+		{
+			"name" : "Blizzard Entertainment",
+			"location" : "Irvine, CA",
+			"description" : "Developing and designing a web application to host online competitive collegiate 
+			gaming tournaments. Servicing high profile events such as the NACHO and NACC to over 10,000+ 
+			competitors",
+			"date" : "2014"
+		}
+	]
 
 };
 
@@ -20,3 +29,5 @@ $("#name").html(info.name);
 $("#contact #number").html(info.number);
 $("#contact #website").html(info.website);
 $("#contact #email").html(info.email);
+
+$("#experience").html(function())

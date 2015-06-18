@@ -1,9 +1,11 @@
 
 <!-- saved from url=(0048)file:///Users/michaelchin1/Downloads/resume.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<title>Resume</title>
-		<link href="./Resume_files/css" rel="stylesheet" type="text/css">
-		<link href="./Resume_files/css(1)" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<style>
 			#container {
 				/* font-family: 'Raleway', sans-serif; */
@@ -86,6 +88,12 @@
 				margin-left: 190px;
 				margin-top: 6px;
 			}
+
+			.org-small-text {
+				font-size: 12px;
+				margin-left: 190px;
+				margin-top: 8px;
+			}
 			
 			#skills {
 				border-top: 1px solid black;
@@ -115,11 +123,11 @@
 	<body>
 		<div id="container">
 			<div id="header">
-				<div id="name">Michael Chin</div>
+				<div id="name"></div>
 				<div id="contact">
-					<span>(425) 922 8767</span>
-					<span>michael.chin425@gmail.com</span>
-					<span>www.michaelrchin.com</span>
+					<span id="number"></span>
+					<span id="email">michael.chin425@gmail.com</span>
+					<span id="website">www.michaelrchin.com</span>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -143,12 +151,26 @@
 			
 			<!-- Experience -->
 			<div class="sub-header">
-				<div class="sub-header-title">Experience</div>
+				<div class="sub-header-title" id="experience">Experience</div>
 				
 				<div class="org">
 					<div class="org-title">
-						<span class="date">2014</span>
-						<span class="corp">eSports Content Developer, Blizzard Entertainment</span>
+						<span class="date">June 2016 - Aug 2016</span>
+						<span class="corp">Software Engineer Intern, Maxsam Partners</span>
+						<span class="location">Seattle, WA</span>
+					</div>
+					<div class="clear"></div>
+					<div class="org-desc">
+						Developing and designing a web application to host online competitive 
+						collegiate gaming tournaments. Servicing high profile events such as 
+						the NACHO and NACC to over 10,000+ competitors
+					</div>
+				</div>
+
+				<div class="org">
+					<div class="org-title">
+						<span class="date">May 2015 - Feb 2016</span>
+						<span class="corp">eSports Content Developer Intern, Blizzard Entertainment</span>
 						<span class="location">Irvine, CA</span>
 					</div>
 					<div class="clear"></div>
@@ -168,8 +190,10 @@
 					</div>
 					<div class="org-desc">
 						Teach students the fundamentals of Java, C, and C++, object-oriented
-						programming, data-structures, and digital system logic under various
-						professors.
+						programming, data-structures, and digital system logic.
+					</div>
+					<div class="org-small-text">
+						CSE 8B: Dr. Alvarado, CSE 140: Dr. Mirza, Dr. Rosing
 					</div>
 				</div>
 				
@@ -194,27 +218,65 @@
 				<div class="org">
 					<div class="org-title">
 						<span class="date">2015 - Present</span>
-						<span class="corp">Overwolf Twitch App Challenge</span>
+						<span class="corp">Dungeons & Data</span>
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
-						Creating an Overwolf extension application overlay to facilitate 
-						streamers utilizing the Twitch.tv streaming service.
+						Data visualization examining UCSD undergraduates time spent working in the CSE lab.  Over two million rows of data collected a mining script.
 					</div>
 				</div>
 				
 				<div class="org">
 					<div class="org-title">
 						<span class="date">2015</span>
-						<span class="corp">TeSPA Qualifer, North American Collegiate Championship (NACC)</span>
+						<span class="corp">San Diego Demographics (NACC)</span>
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
-						Provided technical and administrative support for TeSPA's 200+ team 
-						qualifier into Riot's Collegiate League of Legends championship.  
+						Data visualization map of San Diego real estate values compared against
+						regional demographics
 					</div>
 				</div>
 			
+			</div>
+
+			<div class="sub-header">
+				<div class="sub-header-title">Honors</div>
+
+				<div class="org">
+					<div class="org-title">
+						<span class="date">2015</span>
+						<span class="corp">CSE 190: Kaggle Data Mining Competition</span>
+						<span class="location">San Diego, CA</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						Employed machine-learning algorithms on an Amazon Dataset to place 4th in a purchase prediction task, and 13th in a helpfulness review prediction task out of 120+ students
+					</div>
+				</div>
+			</div>
+			
+			<!-- Projects -->
+			<div id="skills">
+				<span id="title">Skills:</span>
+				<span>Javascript, Java, Python, PHP, SQL</span>
+			</div>
+
+			<div class="sub-header">
+				<div class="sub-header-title">Organization</div>
+
+				<div class="org">
+					<div class="org-title">
+						<span class="date">2013 - 2015</span>
+						<span class="corp">Hearthstone Tournament Director</span>
+						<span class="location"></span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						Lead regional 100+ players Hearthstone tournaments for SoCal's largest annual LAN gatherings, such as <b>Winter Gamefest</b> and <b>Press Start LAN</b>
+					</div>
+				</div>
+
 				<div class="org">
 					<div class="org-title">
 						<span class="date">2014</span>
@@ -222,14 +284,14 @@
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
-						Organized and administrated two Blizzard-sanctioned 4000+ player
+						Organized and administrated Blizzard Entertainment's first and second 4000+ player
 						collegiate Hearthstone tournaments with over $5,000 in scholarships.
 					</div>
 				</div>
 				
 				<div class="org">
 					<div class="org-title">
-						<span class="date">2013 - Present</span>
+						<span class="date">2013 - 2015</span>
 						<span class="corp">Director of Operations, Triton Gaming</span>
 						<span class="location">San Diego, CA</span>
 						<div class="clear"></div>
@@ -239,26 +301,9 @@
 						for an on-campus 1000+ membership gaming organization
 					</div>
 				</div>
-				
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2013 - Present</span>
-						<span class="corp">Hearthstone Lead, Winter Gamefest</span>
-						<span class="location">San Diego, CA</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Lead the regional 80+ player Hearthstone tournament for SoCal's 
-						largest annual LAN
-					</div>
-				</div>
-			</div>
-			
-			<!-- Projects -->
-			<div id="skills">
-				<span id="title">Skills:</span>
-				<span>PHP, Java, MySQL, Javascript, HTML, CSS, C++, C, Ruby on Rails, Python </span>
+
 			</div>
 		</div>
-	
-</body></html>
+		<script src="info.js"></script>
+	</body>
+</html>

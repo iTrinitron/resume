@@ -1,22 +1,127 @@
-
-<!-- saved from url=(0048)file:///Users/michaelchin1/Downloads/resume.html -->
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<title>Resume</title>
-
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'/>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'/>
-		<link href='css/main.css' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			#container {
+				/* font-family: 'Raleway', sans-serif; */
+				font-family: 'Lato', sans-serif;
+				padding-top: 20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#header {
+				font-family: 'Lato', sans-serif;
+			}
+			
+			#name {
+				float: left;
+				font-size: 48px;
+				font-weight: 100; 
+				line-height: 48px;
+				padding-right: 10px;
+				border-right: 1px solid black;
+			}
+			
+			#contact {
+				float: left;
+				font-size: 14px;
+				padding-left: 10px;
+			}
+			
+			#contact span {
+				display: block;
+			}
+			
+			.sub-header {
+				
+			}
+			
+			.sub-header-title {
+				font-family: 'Lato', sans-serif;
+				font-size: 20px;
+				text-align: right;
+				width: 160px;
+				color: rgb(255, 45, 85);
+			}
+			
+			.org {
+				
+			}
+			
+			.org-desc {
+				margin-bottom: 10px;
+			}
+			
+			.org-title {
+				font-size: 14px;
+				margin-top: 5px;
+			}
+			
+			.org-title .date {
+				font-size: 12px;
+				font-weight: bold;
+				text-align: right;
+				width: 160px;
+			}
+			
+			.org-title .corp {
+				font-weight: bold;
+				margin-left: 30px;
+				
+			}
+			
+			.org-title .location {
+				margin-left: 8px;
+			}
+			
+			.org-title span {
+				display: block;
+				float: left;
+			}
+			
+			.org-desc {
+				font-size: 14px;
+				width: 540px;
+				margin-left: 190px;
+				margin-top: 6px;
+			}
+			
+			#skills {
+				border-top: 1px solid black;
+				padding-top: 10px;
+				width: 650px;
+				margin-left: auto;
+				margin-right: auto;
+				font-family: 'Raleway', sans-serif;
+				font-size: 14px;
+				margin-left: 80px;
+				margin-top: 20px;
+			}
+			
+			#skills #title {
+				
+			}
+			
+			#skills span {
+				
+			}
+			
+			.clear {
+				clear: both
+			}
+		</style>
 	</head>
 	<body>
 		<div id="container">
 			<div id="header">
 				<div id="name">Michael Chin</div>
 				<div id="contact">
-					<span id="number"></span>
-					<span id="email">michael.chin425@gmail.com</span>
-					<span id="website">www.michaelrchin.com</span>
+					<span>(425) 922 8767</span>
+					<span>michael.chin425@gmail.com</span>
+					<span>www.michaelrchin.com</span>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -33,178 +138,163 @@
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
-						B.S. Computer Science | Business Minor | Major GPA: 3.51 | Expected Grad: 2016
+						B.S. Computer Science | Business Minor | Expected Grad: December 2016
+					</div>
+				</div>
+			</div>
+			
+			<div class="sub-header">
+				<div class="sub-header-title">Projects</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Sept 2015</span>
+						<span class="corp">SD Hacks - TouchTiles "Best Hardware Hack" award</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						DrinkedIn - Audio-frequency cocktail mixing machine that produces
+						unique drinks based on the music playing.  Constructed with homemade water pumps consisting of
+						recycled water bottle caps and plastic tubes.  Competed with over 1000+ hackers. 
+					</div>
+				</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Aug 2015 - Present</span>
+						<span class="corp">LolOrder</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						Developed a data analytics and visualization project based on Riot Game's 
+						League of Legends API showcasing a champion's various item build paths, and their respective
+						statistics, for every mid laner. 
+					</div>
+				</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">May 2015</span>
+						<span class="corp">CSE 190 Predictive Analytics Challenge - 4th Place</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						Algorithm predicted with 89% accuracy whether or a not a customer would purchase an item based on an Amazon dataset.
+						Competed with 100+ students.
+					</div>
+				</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Skills</span>
+					</div>
+					<div class="org-desc">
+						<div>Javascript, Java, Python, PHP, SQL, C++, C, CSS</div>
+						<div>AngularJS, React, NodeJS, Anaconda, MySQL, Laravel, Arduino</div>
 					</div>
 				</div>
 			</div>
 			
 			<!-- Experience -->
 			<div class="sub-header">
-				<div class="sub-header-title" id="experience">Experience</div>
+				<div class="sub-header-title">Experience</div>
 				
 				<div class="org">
 					<div class="org-title">
-						<span class="date">June 2016 - Aug 2016</span>
+						<span class="date">Jun 2016</span>
+						<span class="corp">Software Engineer Intern, Amazon.com</span>
+						<span class="location">Seattle, WA</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+					</div>
+				</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Jun 2015 - Aug 2015</span>
 						<span class="corp">Software Engineer Intern, Maxsam Partners</span>
 						<span class="location">Seattle, WA</span>
 					</div>
 					<div class="clear"></div>
 					<div class="org-desc">
-						Developing and designing a web application to host online competitive 
-						collegiate gaming tournaments. Servicing high profile events such as 
-						the NACHO and NACC to over 10,000+ competitors
-					</div>
-				</div>
-
-				<div class="org">
-					<div class="org-title">
-						<span class="date">May 2015 - Feb 2016</span>
-						<span class="corp">eSports Content Developer Intern, Blizzard Entertainment</span>
-						<span class="location">Irvine, CA</span>
-					</div>
-					<div class="clear"></div>
-					<div class="org-desc">
-						Developing and designing a web application to host online competitive 
-						collegiate gaming tournaments. Servicing high profile events such as 
-						the NACHO and NACC to over 10,000+ competitors
+						Deployed back-end services and front-end modules for an enterprise
+						travel website.  Managed data migrations from native formats to OTA
+						standard objects. 
 					</div>
 				</div>
 				
 				<div class="org">
 					<div class="org-title">
-						<span class="date">2013 - Present</span>
+						<span class="date">Apr 2014 - Jan 2015</span>
+						<span class="corp">eSports Developer Intern, Blizzard Entertainment</span>
+						<span class="location">Irvine, CA</span>
+					</div>
+					<div class="clear"></div>
+					<div class="org-desc">
+						Developed and designed an online competitive collegiate gaming tournament application. 
+						The platform currently services premier events hosted by Riot Games and Blizzard, such as the NACHO and NACC for over 10,000+ competitors.
+					</div>
+				</div>
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Jan 2013 - Present</span>
 						<span class="corp">CSE Tutor, UCSD CSE Department</span>
 						<span class="location">San Diego, CA</span>
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
 						Teach students the fundamentals of Java, C, and C++, object-oriented
-						programming, data-structures, and digital system logic.
-					</div>
-					<div class="org-small-text">
-						CSE 8B: Dr. Alvarado, CSE 140: Dr. Mirza, Dr. Rosing
-					</div>
-				</div>
-				
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2012</span>
-						<span class="corp">Intern Programmer, Harebrained Schemes</span>
-						<span class="location">Kirkland, WA</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Analyzed MySQL databases to deliver real-time infographics of user game 
-						data from the mobile app "Strikefleet Omega" to Business Intelligence
+						programming, data-structures, and digital system logic under various
+						professors (Dr. Alvarado, Dr. Mirza, Dr. Rosing).
 					</div>
 				</div>
 			</div>
 			
 			<!-- Projects -->
 			<div class="sub-header">
-				<div class="sub-header-title">Projects</div>
-				
-				<div class="org">
-					<div class="org-title">
-						<span class="date">Aug 2015</span>
-						<span class="corp">LolOrder</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						League of Legends item build analyzer
-					</div>
-				</div>
-
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2015 - Present</span>
-						<span class="corp">Dungeons & Data</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Data visualization examining UCSD undergraduates time spent working in the CSE lab.  Over two million rows of data collected a mining script.
-					</div>
-				</div>
-				
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2015</span>
-						<span class="corp">San Diego Demographics (NACC)</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Data visualization map of San Diego real estate values compared against
-						regional demographics
-					</div>
-				</div>
-			
-			</div>
-
-			<div class="sub-header">
-				<div class="sub-header-title">Honors</div>
-
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2015</span>
-						<span class="corp">CSE 190: Kaggle Data Mining Competition</span>
-						<span class="location">San Diego, CA</span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Employed machine-learning algorithms on an Amazon Dataset to place 4th in a purchase prediction task, and 13th in a helpfulness review prediction task out of 120+ competitors
-					</div>
-				</div>
-			</div>
-			
-			<!-- Skills -->
-			<div id="skills">
-				<span id="title">Skills:</span>
-				<span>Javascript, Java, Python, PHP, SQL</span>
-				<span>ReactJS, AngularJS, NodeJS, Anaconda, Laravel, MySQL</span>
-			</div>
-
-			<div class="sub-header">
 				<div class="sub-header-title">Organization</div>
-
+			
 				<div class="org">
 					<div class="org-title">
-						<span class="date">2013 - 2015</span>
-						<span class="corp">Hearthstone Tournament Director</span>
-						<span class="location"></span>
-						<div class="clear"></div>
-					</div>
-					<div class="org-desc">
-						Lead regional 100+ player Hearthstone tournaments for SoCal's largest annual LAN gatherings, such as <b>Winter Gamefest</b> and <b>Press Start LAN</b>
-					</div>
-				</div>
-
-				<div class="org">
-					<div class="org-title">
-						<span class="date">2014</span>
+						<span class="date">Apr 2014 - Sept 2015</span>
 						<span class="corp">North American Collegiate Hearthstone Open (NACHO)</span>
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
-						Organized and administrated Blizzard Entertainment's first and second 4000+ player
+						Organized and administrated two Blizzard-sanctioned 4000+ player
 						collegiate Hearthstone tournaments with over $5,000 in scholarships.
 					</div>
 				</div>
 				
 				<div class="org">
 					<div class="org-title">
-						<span class="date">2013 - 2015</span>
+						<span class="date">Sept 2013 - Jun 2015</span>
 						<span class="corp">Director of Operations, Triton Gaming</span>
 						<span class="location">San Diego, CA</span>
 						<div class="clear"></div>
 					</div>
 					<div class="org-desc">
 						Produced large-scale events, such as LANS, tournaments, and socials
-						for an on-campus 1000+ membership gaming organization
+						for an on-campus 1000+ membership gaming organization.
 					</div>
 				</div>
-
+				
+				<div class="org">
+					<div class="org-title">
+						<span class="date">Sept 2013 - Jun 2015</span>
+						<span class="corp">Hearthstone Tournament Organizer</span>
+						<span class="location">San Diego, CA</span>
+						<div class="clear"></div>
+					</div>
+					<div class="org-desc">
+						Lead regional 100+ player Hearthstone LAN tournaments such as Winter Gamefest and 
+						Press Start.
+					</div>
+				</div>
 			</div>
+		
 		</div>
-		<script src="info.js"></script>
 	</body>
 </html>
